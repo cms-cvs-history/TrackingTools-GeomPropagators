@@ -1,0 +1,5 @@
+es_module AnalyticalPropagator = AnalyticalPropagatorESProducer
+{
+  string ComponentName = "AnalyticalPropagator"
+  string PropagationDirection = "alongMomentum"
+}
