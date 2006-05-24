@@ -1,5 +1,0 @@
-es_module OppositeAnalyticalPropagator = AnalyticalPropagatorESProducer
-{
-  string ComponentName = "AnalyticalPropagatorOpposite"
-  string PropagationDirection = "oppositeToMomentum"
-}
