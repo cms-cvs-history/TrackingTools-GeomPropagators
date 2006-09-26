@@ -2,4 +2,5 @@ es_module AnalyticalPropagator = AnalyticalPropagatorESProducer
 {
   string ComponentName = "AnalyticalPropagator"
   string PropagationDirection = "alongMomentum"
+  double MaxDPhi              = 1.6
 }
