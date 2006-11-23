@@ -1,0 +1,52 @@
+# Tracker's propagators 
+include "TrackingTools/MaterialEffects/data/MaterialPropagator.cfi"
+include "TrackingTools/MaterialEffects/data/OppositeMaterialPropagator.cfi"
+
+# Muon's propagators
+include "TrackPropagation/SteppingHelixPropagator/data/SteppingHelixPropagatorAlong.cfi"
+include "TrackPropagation/SteppingHelixPropagator/data/SteppingHelixPropagatorOpposite.cfi"
+include "TrackPropagation/SteppingHelixPropagator/data/SteppingHelixPropagatorAny.cfi"
+
+es_module SmartPropagator = SmartPropagatorESProducer
+{
+    string ComponentName = "SmartPropagator"
+    string PropagationDirection = "alongMomentum"
+    
+    double Epsilon = 5.
+    
+    string TrackerPropagator = "PropagatorWithMaterial"
+    string MuonPropagator = "SteppingHelixPropagatorAlong"
+}
+
+es_module SmartPropagatorOpposite = SmartPropagatorESProducer
+{
+    string ComponentName = "SmartPropagatorOpposite"
+    string PropagationDirection = "oppositeToMomentum"
+    
+    double Epsilon = 5.
+    
+    string TrackerPropagator = "PropagatorWithMaterialOpposite"
+    string MuonPropagator = "SteppingHelixPropagatorOpposite"
+}
+
+es_module SmartPropagatorAny = SmartPropagatorESProducer
+{
+    string ComponentName = "SmartPropagatorAny"
+    string PropagationDirection = "alongMomentum"
+    
+    double Epsilon = 5.
+
+    string TrackerPropagator = "PropagatorWithMaterial"    
+    string MuonPropagator = "SteppingHelixPropagatorAny"
+}
+
+es_module SmartPropagatorAnyOpposite = SmartPropagatorESProducer
+{
+    string ComponentName = "SmartPropagatorAnyOpposite"
+    string PropagationDirection = "oppositeToMomentum"
+    
+    double Epsilon = 5.
+    
+    string TrackerPropagator = "PropagatorWithMaterialOpposite"
+    string MuonPropagator = "SteppingHelixPropagatorAny"
+}
