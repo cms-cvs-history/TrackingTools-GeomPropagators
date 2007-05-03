@@ -1,0 +1,1 @@
+include "TrackingTools/GeomPropagators/data/SmartPropagator.cfi"
