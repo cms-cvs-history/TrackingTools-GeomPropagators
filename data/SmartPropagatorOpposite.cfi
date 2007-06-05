@@ -1,0 +1,12 @@
+es_module SmartPropagatorOpposite = SmartPropagatorESProducer
+{
+    string ComponentName = "SmartPropagatorOpposite"
+    string PropagationDirection = "oppositeToMomentum"
+    
+    double Epsilon = 5.
+    
+    string TrackerPropagator = "PropagatorWithMaterialOpposite"
+    string MuonPropagator = "SteppingHelixPropagatorOpposite"
+}
+
+

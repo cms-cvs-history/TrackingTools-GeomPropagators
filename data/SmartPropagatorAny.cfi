@@ -1,0 +1,12 @@
+es_module SmartPropagatorAny = SmartPropagatorESProducer
+{
+    string ComponentName = "SmartPropagatorAny"
+    string PropagationDirection = "alongMomentum"
+    
+    double Epsilon = 5.
+
+    string TrackerPropagator = "PropagatorWithMaterial"    
+    string MuonPropagator = "SteppingHelixPropagatorAny"
+}
+
+
