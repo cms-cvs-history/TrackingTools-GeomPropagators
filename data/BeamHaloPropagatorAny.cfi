@@ -1,0 +1,8 @@
+es_module BeamHaloPropagatorAny = BeamHaloPropagatorESProducer
+{
+	string ComponentName = "BeamHaloPropagatorAny"
+	string PropagationDirection = "anyDirection"
+	
+	string EndCapTrackerPropagator = "BeamHaloMPropagatorAlong"
+	string CrossingTrackerPropagator = "BeamHaloSHPropagatorAny"
+}
