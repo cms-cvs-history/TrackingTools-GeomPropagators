@@ -1,6 +1,12 @@
 include "TrackingTools/MaterialEffects/data/MaterialPropagator.cfi"
 include "TrackingTools/MaterialEffects/data/OppositeMaterialPropagator.cfi"
 
+es_module RKTrackerPropagator = MaterialPropagator from "TrackingTools/MaterialEffects/data/MaterialPropagator.cfi"
+replace RKTrackerPropagator.ComponentName = "RKTrackerPropagator"
+replace RKTrackerPropagator.useRungeKutta = true
+
+
+
 # Muon's propagators
 include "TrackPropagation/SteppingHelixPropagator/data/SteppingHelixPropagatorAlong.cfi"
 include "TrackPropagation/SteppingHelixPropagator/data/SteppingHelixPropagatorOpposite.cfi"
