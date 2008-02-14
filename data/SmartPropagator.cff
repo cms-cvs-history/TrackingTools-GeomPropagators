@@ -14,6 +14,8 @@ include "TrackPropagation/SteppingHelixPropagator/data/SteppingHelixPropagatorAn
 
 # Tracker's propagators 
 include "TrackingTools/GeomPropagators/data/SmartPropagator.cfi"
+include "TrackingTools/GeomPropagators/data/SmartPropagatorRK.cfi"
 include "TrackingTools/GeomPropagators/data/SmartPropagatorOpposite.cfi"
 include "TrackingTools/GeomPropagators/data/SmartPropagatorAny.cfi"
+include "TrackingTools/GeomPropagators/data/SmartPropagatorAnyRK.cfi"
 include "TrackingTools/GeomPropagators/data/SmartPropagatorAnyOpposite.cfi"

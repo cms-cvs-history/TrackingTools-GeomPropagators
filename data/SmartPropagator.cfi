@@ -5,7 +5,7 @@ es_module SmartPropagator = SmartPropagatorESProducer
     
     double Epsilon = 5.
     
-    string TrackerPropagator = "RKTrackerPropagator"
+    string TrackerPropagator = "PropagatorWithMaterial"
     string MuonPropagator = "SteppingHelixPropagatorAlong"
 }
 

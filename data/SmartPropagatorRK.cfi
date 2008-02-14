@@ -1,0 +1,11 @@
+es_module SmartPropagatorRK = SmartPropagatorESProducer
+{
+    string ComponentName = "SmartPropagatorRK"
+    string PropagationDirection = "alongMomentum"
+    
+    double Epsilon = 5.
+    
+    string TrackerPropagator = "RKTrackerPropagator"
+    string MuonPropagator = "SteppingHelixPropagatorAlong"
+}
+
