@@ -1,8 +1,0 @@
-es_module BeamHaloPropagatorAlong = BeamHaloPropagatorESProducer
-{
-	string ComponentName = "BeamHaloPropagatorAlong"
-	string PropagationDirection = "alongMomentum"
-	
-	string EndCapTrackerPropagator = "BeamHaloMPropagatorAlong"
-	string CrossingTrackerPropagator = "BeamHaloSHPropagatorAlong"
-}
