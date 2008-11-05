@@ -1,8 +1,0 @@
-es_module BeamHaloPropagatorOpposite = BeamHaloPropagatorESProducer
-{
-	string ComponentName = "BeamHaloPropagatorOpposite"
-	string PropagationDirection = "oppositeToMomentum"
-	
-	string EndCapTrackerPropagator = "BeamHaloMPropagatorOpposite"
-	string CrossingTrackerPropagator = "BeamHaloSHPropagatorOpposite"
-}
